@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master Student at [Chosun University](https://www3.chosun.ac.kr/chosun/index.do), Research Assistant at [Envi Lab, KENTECH](https://sites.google.com/view/envilab-kentech)<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Master Student at <a href="https://www3.chosun.ac.kr/chosun/index.do" target="_blank" rel="noopener">Chosun University</a>, Research Assistant at <a href="https://sites.google.com/view/envilab-kentech" target="_blank" rel="noopener">ENVI Lab, KENTECH</a>.
 
 profile:
   align: right
