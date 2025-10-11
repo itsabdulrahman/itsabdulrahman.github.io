@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://itsabdulrahman.github.io/itsabdulrahman/sitemap.xml
+Sitemap: https://itsabdulrahman.github.io/sitemap.xml
