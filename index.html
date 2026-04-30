@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rahman</title>
+<meta name="description" content="Abdul Rahman — Researcher in deep learning and medical image computing.">
+
+<style>
+  body {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    margin: 0;
+    background: #ffffff;
+    color: #222;
+  }
+  a { color: #1772d0; text-decoration: none; }
+  a:hover { color: #f09228; text-decoration: none; }
+
+  table { border: 0; border-spacing: 0; border-collapse: separate; margin-right: auto; margin-left: auto; }
+  table.header { width: 920px; max-width: 100%; padding-top: 40px; padding-bottom: 30px; }
+  table.section { width: 920px; max-width: 100%; padding-top: 10px; padding-bottom: 10px; }
+
+  td { padding: 0; vertical-align: top; }
+
+  .name { font-size: 32pt; font-weight: 300; }
+  .bio { font-size: 12pt; line-height: 1.5; margin-top: 18px; }
+  .bio p { margin: 12px 0; }
+
+  .links { font-size: 11pt; margin-top: 16px; }
+  .links a { margin-right: 4px; }
+
+  .heading {
+    font-size: 22pt;
+    font-weight: 300;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+  }
+
+  .pub-thumb {
+    width: 180px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .pub-thumb img {
+    width: 160px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+  }
+  .pub-info {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  .pub-title { font-weight: 500; font-size: 13pt; }
+  .pub-authors { font-size: 11pt; }
+  .pub-venue { font-style: italic; font-size: 11pt; }
+  .pub-links { font-size: 11pt; margin-top: 4px; }
+
+  .me-photo {
+    width: 220px;
+    border-radius: 6px;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 10pt;
+    color: #888;
+    padding: 30px 0 40px 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 760px) {
+    table.header, table.section { width: 92%; }
+    .header-left, .header-right { display: block; width: 100%; text-align: center; }
+    .me-photo { width: 180px; margin-top: 20px; }
+    .pub-thumb { display: block; width: 100%; padding-right: 0; }
+    .pub-thumb img { width: 60%; }
+    .pub-info { display: block; width: 100%; padding-left: 0; }
+    .name { font-size: 26pt; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<table class="header">
+  <tr>
+    <td class="header-left" style="padding-right: 30px;">
+      <div class="name">Abdul Rahman</div>
+
+      <div class="bio">
+        <p>
+          I'm a researcher working on <b>deep learning for medical image computing</b>,
+          with a focus on <b>unsupervised anomaly detection</b> and <b>segmentation</b>.
+          My current work centers on diffusion-based generative models and how the
+          structural priors of medical images (such as bilateral symmetry) can be
+          exploited for robust anomaly localization.
+        </p>
+        <p>
+          I am the first author of <b>SymmDiff</b>, a symmetry-aware diffusion model
+          for anomaly detection in pelvic X-rays, currently under peer review at
+          <b>MICCAI</b>. I have also reproduced and extended recent diffusion-based
+          anomaly detection methods (e.g. DeCo-Diff) on industrial benchmarks like
+          MVTec-AD and MVTec AD&nbsp;2.
+        </p>
+        <p>
+          Outside of research, I co-founded
+          <a href="https://www.yumkins.co" target="_blank">Yumkins</a>,
+          a natural baby-food D2C brand based in Pakistan, where I lead marketing and finance.
+        </p>
+
+        <div class="links">
+          <a href="mailto:your.email@example.com">Email</a> /
+          <a href="https://github.com/itsabdulrahman" target="_blank">GitHub</a> /
+          <a href="https://www.linkedin.com/in/itsabdulrahman/" target="_blank">LinkedIn</a> /
+          <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> /
+          <a href="assets/cv.pdf" target="_blank">CV</a>
+        </div>
+      </div>
+    </td>
+
+    <td class="header-right" style="text-align: center;">
+      <img class="me-photo" src="assets/profile.jpg" alt="Abdul Rahman">
+    </td>
+  </tr>
+</table>
+
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<table class="section">
+  <tr><td>
+    <div class="heading">Research Interests</div>
+    <p style="line-height: 1.6;">
+      Unsupervised anomaly detection (UAD), diffusion models, medical image segmentation,
+      transformer-based architectures, and the use of structural priors (symmetry,
+      pre-trained backbones) to reduce supervision in medical imaging tasks.
+      Benchmarks I work with include MVTec AD, MVTec AD 2, BraTS, and ATLAS&nbsp;v2.
+    </p>
+  </td></tr>
+</table>
+
+
+<!-- ============ PUBLICATIONS ============ -->
+<table class="section">
+  <tr><td>
+    <div class="heading">Publications</div>
+  </td></tr>
+
+  <!-- Publication 1: SymmDiff -->
+  <tr>
+    <td class="pub-thumb">
+      <img src="assets/symmdiff.png" alt="SymmDiff">
+    </td>
+    <td class="pub-info">
+      <div class="pub-title">
+        <a href="#">SymmDiff: Symmetry-Aware Diffusion for Anomaly Detection in Pelvic X-rays</a>
+      </div>
+      <div class="pub-authors">
+        <b>Abdul Rahman</b>, [Co-authors]
+      </div>
+      <div class="pub-venue">
+        Under review, <i>MICCAI</i>, 2026.
+      </div>
+      <div class="pub-links">
+        <a href="#">paper</a> /
+        <a href="#">code</a> /
+        <a href="#">project page</a>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Add more publications by duplicating the <tr> block above -->
+
+</table>
+
+
+<!-- ============ PROJECTS ============ -->
+<table class="section">
+  <tr><td>
+    <div class="heading">Projects</div>
+  </td></tr>
+
+  <tr>
+    <td class="pub-thumb">
+      <img src="assets/yumkins.png" alt="Yumkins">
+    </td>
+    <td class="pub-info">
+      <div class="pub-title">
+        <a href="https://www.yumkins.co" target="_blank">Yumkins — Natural Baby Food</a>
+      </div>
+      <div class="pub-authors">
+        Co-founder (with Hira Mubeen)
+      </div>
+      <div class="pub-venue">
+        Direct-to-consumer brand based in Pakistan.
+      </div>
+      <div class="pub-links">
+        <a href="https://www.yumkins.co" target="_blank">website</a>
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+
+<!-- ============ FOOTER ============ -->
+<div class="footer">
+  This page design is based on a template by
+  <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>.
+</div>
+
+</body>
+</html>
