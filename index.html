@@ -10,6 +10,32 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
 
+  <style>
+  /* Mobile-only profile photo — hidden on desktop */
+  .mobile-photo {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    /* Show the centered photo on mobile */
+    .mobile-photo {
+      display: block;
+      text-align: center;
+      margin: 15px auto 25px auto;
+    }
+    .mobile-photo img {
+      width: 55%;
+      max-width: 220px;
+      border-radius: 8px;
+    }
+
+    /* Hide the right-side desktop photo on mobile */
+    .desktop-photo-cell {
+      display: none !important;
+    }
+  }
+  </style>
+
 </head>
 
 <body>
@@ -22,6 +48,9 @@
               <p style="text-align:center">
                 <name>Abdul Rahman</name>
               </p>
+              <div class="mobile-photo">
+                <img src="images/profile.jpg" alt="Abdul Rahman">
+              </div>
 
 		<p> I'm a Master's student of Energy AI at <a href="https://www.kentech.ac.kr" target="_blank">KENTECH</a> and a Graduate Researcher at the <a href="https://sites.google.com/view/envilab-kentech" target="_blank">ENVI Lab</a>, supervised by <a href="https://scholar.google.com/citations?user=maY0q9IAAAAJ&hl=en" target="_blank">Prof. Bumshik Lee</a>, where I focus on generative modeling to solve real-world challenges in healthcare, autonomous systems, and multimedia. My research utilizes advanced generative frameworks to develop robust solutions for complex tasks like medical anomaly detection and high-fidelity image synthesis.</p>
 		<p> Beyond academia, I co-founded <a href="https://www.yumkins.co" target="_blank">Yumkins</a>, a food-tech startup in Pakistan, in 2022, where I led the marketing and financial operations. I now remain involved as a co-founding advisor, helping guide the brand's growth alongside my academic pursuits.</p>
@@ -34,7 +63,7 @@
                 <a href="">CV</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td class="desktop-photo-cell" style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/profile.jpg"><img style="width:70%;max-width:70%" alt="Abdul Rahman" src="images/profile.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
